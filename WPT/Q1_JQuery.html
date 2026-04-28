@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Single Element Selection</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+
+<button id="btn">Get Second Item</button>
+
+<script>
+$(document).ready(function() {
+    $("#btn").click(function() {
+       
+        var items = $("li");
+        var singleItem = items.eq(1);
+
+    
+        alert("Selected Element: " + singleItem.text());
+    });
+});
+</script>
+
+</body>
+</html>

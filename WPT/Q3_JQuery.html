@@ -1,0 +1,40 @@
+<!-- Write a jQuery program to attach a click and double-click events to all elements. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click and Double Click Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div>Element 1</div>
+<div>Element 2</div>
+<p>Paragraph Element</p>
+<button>Button Element</button>
+
+<script>
+$(document).ready(function() {
+
+   
+    $("*").click(function() {
+        alert("Single Click on: " + $(this).prop("tagName"));
+    });
+
+    $("*").dblclick(function() {
+        alert("Double Click on: " + $(this).prop("tagName"));
+    });
+
+});
+</script>
+
+</body>
+</html>
