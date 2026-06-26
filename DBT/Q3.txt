@@ -1,0 +1,315 @@
+Q3. Union/Union ALL Queries on Various type of Joins using OLD and SQL Standard Syntax Copying table structure, Copying data from one table to another Using AUTO_INCREMENT.
+
+mysql> select deptname from department union select empname from employee;
++------------+
+| deptname   |
++------------+
+| hr         |
+| it         |
+| sales      |
+| finance    |
+| marketing  |
+| admin      |
+| support    |
+| purchase   |
+| training   |
+| production |
+| amit       |
+| neha       |
+| rahul      |
+| pooja      |
+| vikas      |
+| anita      |
+| rohan      |
+| kiran      |
+| meena      |
+| ajay       |
++------------+
+20 rows in set (0.00 sec)
+
+
+mysql> select deptname from department union all select empname from employee;
++------------+
+| deptname   |
++------------+
+| hr         |
+| it         |
+| sales      |
+| finance    |
+| marketing  |
+| admin      |
+| support    |
+| purchase   |
+| training   |
+| production |
+| amit       |
+| neha       |
+| rahul      |
+| pooja      |
+| vikas      |
+| anita      |
+| rohan      |
+| kiran      |
+| meena      |
+| ajay       |
++------------+
+20 rows in set (0.00 sec)
+
+
+mysql> select empname,deptname from employee e,department d where e.deptid=d.deptid;
++---------+-----------+
+| empname | deptname  |
++---------+-----------+
+| amit    | hr        |
+| neha    | it        |
+| rahul   | sales     |
+| pooja   | it        |
+| vikas   | hr        |
+| anita   | finance   |
+| rohan   | sales     |
+| kiran   | it        |
+| meena   | finance   |
+| ajay    | marketing |
++---------+-----------+
+10 rows in set (0.00 sec)
+
+
+
+mysql> select empname,deptname from employee e inner join department d on e.deptid=d.deptid;
++---------+-----------+
+| empname | deptname  |
++---------+-----------+
+| amit    | hr        |
+| neha    | it        |
+| rahul   | sales     |
+| pooja   | it        |
+| vikas   | hr        |
+| anita   | finance   |
+| rohan   | sales     |
+| kiran   | it        |
+| meena   | finance   |
+| ajay    | marketing |
++---------+-----------+
+10 rows in set (0.00 sec)
+
+
+mysql> select empname,deptname from employee e left join department d on e.deptid=d.deptid;
++---------+-----------+
+| empname | deptname  |
++---------+-----------+
+| amit    | hr        |
+| neha    | it        |
+| rahul   | sales     |
+| pooja   | it        |
+| vikas   | hr        |
+| anita   | finance   |
+| rohan   | sales     |
+| kiran   | it        |
+| meena   | finance   |
+| ajay    | marketing |
++---------+-----------+
+10 rows in set (0.00 sec)
+
+
+mysql> select empname,deptname from employee e right join department d on e.deptid=d.deptid;
++---------+------------+
+| empname | deptname   |
++---------+------------+
+| vikas   | hr         |
+| amit    | hr         |
+| kiran   | it         |
+| pooja   | it         |
+| neha    | it         |
+| rohan   | sales      |
+| rahul   | sales      |
+| meena   | finance    |
+| anita   | finance    |
+| ajay    | marketing  |
+| NULL    | admin      |
+| NULL    | support    |
+| NULL    | purchase   |
+| NULL    | training   |
+| NULL    | production |
++---------+------------+
+15 rows in set (0.00 sec)
+
+
+mysql> select empname,deptname from employee cross join department;
++---------+------------+
+| empname | deptname   |
++---------+------------+
+| ajay    | hr         |
+| meena   | hr         |
+| kiran   | hr         |
+| rohan   | hr         |
+| anita   | hr         |
+| vikas   | hr         |
+| pooja   | hr         |
+| rahul   | hr         |
+| neha    | hr         |
+| amit    | hr         |
+| ajay    | it         |
+| meena   | it         |
+| kiran   | it         |
+| rohan   | it         |
+| anita   | it         |
+| vikas   | it         |
+| pooja   | it         |
+| rahul   | it         |
+| neha    | it         |
+| amit    | it         |
+| ajay    | sales      |
+| meena   | sales      |
+| kiran   | sales      |
+| rohan   | sales      |
+| anita   | sales      |
+| vikas   | sales      |
+| pooja   | sales      |
+| rahul   | sales      |
+| neha    | sales      |
+| amit    | sales      |
+| ajay    | finance    |
+| meena   | finance    |
+| kiran   | finance    |
+| rohan   | finance    |
+| anita   | finance    |
+| vikas   | finance    |
+| pooja   | finance    |
+| rahul   | finance    |
+| neha    | finance    |
+| amit    | finance    |
+| ajay    | marketing  |
+| meena   | marketing  |
+| kiran   | marketing  |
+| rohan   | marketing  |
+| anita   | marketing  |
+| vikas   | marketing  |
+| pooja   | marketing  |
+| rahul   | marketing  |
+| neha    | marketing  |
+| amit    | marketing  |
+| ajay    | admin      |
+| meena   | admin      |
+| kiran   | admin      |
+| rohan   | admin      |
+| anita   | admin      |
+| vikas   | admin      |
+| pooja   | admin      |
+| rahul   | admin      |
+| neha    | admin      |
+| amit    | admin      |
+| ajay    | support    |
+| meena   | support    |
+| kiran   | support    |
+| rohan   | support    |
+| anita   | support    |
+| vikas   | support    |
+| pooja   | support    |
+| rahul   | support    |
+| neha    | support    |
+| amit    | support    |
+| ajay    | purchase   |
+| meena   | purchase   |
+| kiran   | purchase   |
+| rohan   | purchase   |
+| anita   | purchase   |
+| vikas   | purchase   |
+| pooja   | purchase   |
+| rahul   | purchase   |
+| neha    | purchase   |
+| amit    | purchase   |
+| ajay    | training   |
+| meena   | training   |
+| kiran   | training   |
+| rohan   | training   |
+| anita   | training   |
+| vikas   | training   |
+| pooja   | training   |
+| rahul   | training   |
+| neha    | training   |
+| amit    | training   |
+| ajay    | production |
+| meena   | production |
+| kiran   | production |
+| rohan   | production |
+| anita   | production |
+| vikas   | production |
+| pooja   | production |
+| rahul   | production |
+| neha    | production |
+| amit    | production |
++---------+------------+
+100 rows in set (0.00 sec)
+
+
+
+mysql> select a.empname,b.empname from employee a,employee b where a.deptid=b.deptid and a.empid<>b.empid;
++---------+---------+
+| empname | empname |
++---------+---------+
+| vikas   | amit    |
+| kiran   | neha    |
+| pooja   | neha    |
+| rohan   | rahul   |
+| kiran   | pooja   |
+| neha    | pooja   |
+| amit    | vikas   |
+| meena   | anita   |
+| rahul   | rohan   |
+| pooja   | kiran   |
+| neha    | kiran   |
+| anita   | meena   |
++---------+---------+
+12 rows in set (0.00 sec)
+
+
+mysql> create table emp_backup as select * from employee where 1=0;
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+mysql> insert into emp_backup select * from employee;
+Query OK, 10 rows affected (0.01 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+
+mysql> select * from emp_backup;
++-------+---------+--------+--------+
+| empid | empname | salary | deptid |
++-------+---------+--------+--------+
+|     1 | amit    |  35000 |      1 |
+|     2 | neha    |  45000 |      2 |
+|     3 | rahul   |  30000 |      3 |
+|     4 | pooja   |  55000 |      2 |
+|     5 | vikas   |  25000 |      1 |
+|     6 | anita   |  60000 |      4 |
+|     7 | rohan   |  40000 |      3 |
+|     8 | kiran   |  50000 |      2 |
+|     9 | meena   |  32000 |      4 |
+|    10 | ajay    |  28000 |      5 |
++-------+---------+--------+--------+
+10 rows in set (0.00 sec)
+
+
+mysql> create table student(studid int primary key auto_increment,studname varchar(50));
+Query OK, 0 rows affected (0.02 sec)
+
+
+mysql> insert into student(studname) values('ram');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into student(studname) values('shyam');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into student(studname) values('geeta');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from student;
++--------+----------+
+| studid | studname |
++--------+----------+
+|      1 | ram      |
+|      2 | shyam    |
+|      3 | geeta    |
++--------+----------+
+3 rows in set (0.00 sec)
