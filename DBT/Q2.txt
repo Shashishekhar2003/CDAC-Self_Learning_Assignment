@@ -1,0 +1,245 @@
+Q2. Defining Data Types for Columns Creating, Altering, Dropping Constraints Aggregate Functions: SUM(), AVG(), COUNT(), MAX(), MIN(), COUNT(), Group By, Having Clause Using Like, Distinct, Order By, Between...And Comparing Nulls, Using IN/Not-In.
+
+
+mysql> create table employee(empid int primary key,empname varchar(50) not null,salary decimal(10,2),dept varchar(30),age int);
+Query OK, 0 rows affected (0.03 sec)
+
+
+mysql> insert into employee values(1,'amit',35000,'hr',25);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employee values(2,'neha',45000,'it',28);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employee values(3,'rahul',30000,'sales',24);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employee values(4,'pooja',55000,'it',30);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employee values(5,'vikas',25000,'hr',22);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employee values(6,'anita',60000,'finance',35);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employee values(7,'rohan',40000,'sales',27);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employee values(8,'kiran',50000,'it',29);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employee values(9,'meena',32000,'finance',26);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employee values(10,'ajay',28000,null,23);
+Query OK, 1 row affected (0.00 sec)
+
+
+mysql> table employee;
++-------+---------+----------+---------+------+
+| empid | empname | salary   | dept    | age  |
++-------+---------+----------+---------+------+
+|     1 | amit    | 35000.00 | hr      |   25 |
+|     2 | neha    | 45000.00 | it      |   28 |
+|     3 | rahul   | 30000.00 | sales   |   24 |
+|     4 | pooja   | 55000.00 | it      |   30 |
+|     5 | vikas   | 25000.00 | hr      |   22 |
+|     6 | anita   | 60000.00 | finance |   35 |
+|     7 | rohan   | 40000.00 | sales   |   27 |
+|     8 | kiran   | 50000.00 | it      |   29 |
+|     9 | meena   | 32000.00 | finance |   26 |
+|    10 | ajay    | 28000.00 | NULL    |   23 |
++-------+---------+----------+---------+------+
+10 rows in set (0.00 sec)
+
+
+
+mysql> alter table employee add constraint chk_salary check(salary>0);
+Query OK, 10 rows affected (0.07 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+
+mysql> alter table employee drop constraint chk_salary;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+mysql> select sum(salary) from employee;
++-------------+
+| sum(salary) |
++-------------+
+|   400000.00 |
++-------------+
+1 row in set (0.00 sec)
+
+
+mysql> select avg(salary) from employee;
++--------------+
+| avg(salary)  |
++--------------+
+| 40000.000000 |
++--------------+
+1 row in set (0.00 sec)
+
+
+
+mysql> select count(*) from employee;
++----------+
+| count(*) |
++----------+
+|       10 |
++----------+
+1 row in set (0.00 sec)
+
+
+
+mysql> select max(salary) from employee;
+
++-------------+
+| max(salary) |
++-------------+
+|    60000.00 |
++-------------+
+1 row in set (0.00 sec)
+
+
+mysql> select min(salary) from employee;
++-------------+
+| min(salary) |
++-------------+
+|    25000.00 |
++-------------+
+1 row in set (0.00 sec)
+
+
+mysql> select dept,sum(salary) from employee group by dept;
++---------+-------------+
+| dept    | sum(salary) |
++---------+-------------+
+| hr      |    60000.00 |
+| it      |   150000.00 |
+| sales   |    70000.00 |
+| finance |    92000.00 |
+| NULL    |    28000.00 |
++---------+-------------+
+5 rows in set (0.00 sec)
+
+
+mysql> select dept,avg(salary) from employee group by dept having avg(salary)>35000;
++---------+--------------+
+| dept    | avg(salary)  |
++---------+--------------+
+| it      | 50000.000000 |
+| finance | 46000.000000 |
++---------+--------------+
+2 rows in set (0.00 sec)
+
+
+mysql> select * from employee where empname like 'a%';
++-------+---------+----------+---------+------+
+| empid | empname | salary   | dept    | age  |
++-------+---------+----------+---------+------+
+|     1 | amit    | 35000.00 | hr      |   25 |
+|     6 | anita   | 60000.00 | finance |   35 |
+|    10 | ajay    | 28000.00 | NULL    |   23 |
++-------+---------+----------+---------+------+
+3 rows in set (0.00 sec)
+
+
+mysql> select distinct dept from employee;
++---------+
+| dept    |
++---------+
+| hr      |
+| it      |
+| sales   |
+| finance |
+| NULL    |
++---------+
+5 rows in set (0.00 sec)
+
+
+mysql> select * from employee order by salary desc;
++-------+---------+----------+---------+------+
+| empid | empname | salary   | dept    | age  |
++-------+---------+----------+---------+------+
+|     6 | anita   | 60000.00 | finance |   35 |
+|     4 | pooja   | 55000.00 | it      |   30 |
+|     8 | kiran   | 50000.00 | it      |   29 |
+|     2 | neha    | 45000.00 | it      |   28 |
+|     7 | rohan   | 40000.00 | sales   |   27 |
+|     1 | amit    | 35000.00 | hr      |   25 |
+|     9 | meena   | 32000.00 | finance |   26 |
+|     3 | rahul   | 30000.00 | sales   |   24 |
+|    10 | ajay    | 28000.00 | NULL    |   23 |
+|     5 | vikas   | 25000.00 | hr      |   22 |
++-------+---------+----------+---------+------+
+10 rows in set (0.00 sec)
+
+
+
+mysql> select * from employee where salary between 30000 and 50000;
++-------+---------+----------+---------+------+
+| empid | empname | salary   | dept    | age  |
++-------+---------+----------+---------+------+
+|     1 | amit    | 35000.00 | hr      |   25 |
+|     2 | neha    | 45000.00 | it      |   28 |
+|     3 | rahul   | 30000.00 | sales   |   24 |
+|     7 | rohan   | 40000.00 | sales   |   27 |
+|     8 | kiran   | 50000.00 | it      |   29 |
+|     9 | meena   | 32000.00 | finance |   26 |
++-------+---------+----------+---------+------+
+6 rows in set (0.00 sec)
+
+
+
+mysql> select * from employee where dept is null;
++-------+---------+----------+------+------+
+| empid | empname | salary   | dept | age  |
++-------+---------+----------+------+------+
+|    10 | ajay    | 28000.00 | NULL |   23 |
++-------+---------+----------+------+------+
+1 row in set (0.00 sec)
+
+
+mysql> select * from employee where dept is not null;
++-------+---------+----------+---------+------+
+| empid | empname | salary   | dept    | age  |
++-------+---------+----------+---------+------+
+|     1 | amit    | 35000.00 | hr      |   25 |
+|     2 | neha    | 45000.00 | it      |   28 |
+|     3 | rahul   | 30000.00 | sales   |   24 |
+|     4 | pooja   | 55000.00 | it      |   30 |
+|     5 | vikas   | 25000.00 | hr      |   22 |
+|     6 | anita   | 60000.00 | finance |   35 |
+|     7 | rohan   | 40000.00 | sales   |   27 |
+|     8 | kiran   | 50000.00 | it      |   29 |
+|     9 | meena   | 32000.00 | finance |   26 |
++-------+---------+----------+---------+------+
+9 rows in set (0.00 sec)
+
+
+mysql> select * from employee where dept in('hr','it');
++-------+---------+----------+------+------+
+| empid | empname | salary   | dept | age  |
++-------+---------+----------+------+------+
+|     1 | amit    | 35000.00 | hr   |   25 |
+|     2 | neha    | 45000.00 | it   |   28 |
+|     4 | pooja   | 55000.00 | it   |   30 |
+|     5 | vikas   | 25000.00 | hr   |   22 |
+|     8 | kiran   | 50000.00 | it   |   29 |
++-------+---------+----------+------+------+
+5 rows in set (0.00 sec)
+
+
+mysql> select * from employee where dept not in('hr','it');
++-------+---------+----------+---------+------+
+| empid | empname | salary   | dept    | age  |
++-------+---------+----------+---------+------+
+|     3 | rahul   | 30000.00 | sales   |   24 |
+|     6 | anita   | 60000.00 | finance |   35 |
+|     7 | rohan   | 40000.00 | sales   |   27 |
+|     9 | meena   | 32000.00 | finance |   26 |
++-------+---------+----------+---------+------+
+4 rows in set (0.00 sec)
