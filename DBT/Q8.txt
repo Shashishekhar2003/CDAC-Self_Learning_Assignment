@@ -1,0 +1,83 @@
+8. Exception handling in Stored Procedure Exception handling with various handler actions.
+
+mysql> CREATE PROCEDURE ContinueHandlerDemo()
+    -> BEGIN
+    ->     DECLARE CONTINUE HANDLER FOR SQLEXCEPTION
+    ->     SELECT 'Error Occurred, Continuing Execution' AS Message;
+    ->
+    ->     INSERT INTO Employee VALUES
+    ->     (101,'Priya',55000);
+    ->
+    ->     SELECT 'Procedure Completed' AS Status;
+    -> END //
+Query OK, 0 rows affected (0.02 sec)
+
+mysql>
+mysql> DELIMITER ;
+mysql> CALL ContinueHandlerDemo();
++--------------------------------------+
+| Message                              |
++--------------------------------------+
+| Error Occurred, Continuing Execution |
++--------------------------------------+
+1 row in set (0.00 sec)
+
++---------------------+
+| Status              |
++---------------------+
+| Procedure Completed |
++---------------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> DELIMITER //
+mysql>
+mysql> CREATE PROCEDURE ExitHandlerDemo()
+    -> BEGIN
+    ->     DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    ->     SELECT 'Error Occurred, Procedure Stopped' AS Message;
+    ->
+    ->     INSERT INTO Employee VALUES
+    ->     (101,'Sneha',70000);
+    ->
+    ->     SELECT 'Procedure Completed';
+    -> END //
+Query OK, 0 rows affected (0.04 sec)
+
+mysql>
+mysql> DELIMITER ;
+mysql> CALL ExitHandlerDemo();
++-----------------------------------+
+| Message                           |
++-----------------------------------+
+| Error Occurred, Procedure Stopped |
++-----------------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> DELIMITER //
+mysql>
+mysql> CREATE PROCEDURE ExceptionDemo()
+    -> BEGIN
+    ->     DECLARE CONTINUE HANDLER
+    ->     FOR SQLEXCEPTION
+    ->     SELECT 'SQL Exception Occurred';
+    ->
+    ->     INSERT INTO Employee VALUES
+    ->     (101,'Test',50000);
+    -> END //
+Query OK, 0 rows affected (0.21 sec)
+
+mysql>
+mysql> DELIMITER ;
+mysql> call ExceptionDemo();
++------------------------+
+| SQL Exception Occurred |
++------------------------+
+| SQL Exception Occurred |
++------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
