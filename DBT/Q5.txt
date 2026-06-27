@@ -1,0 +1,95 @@
+Q5. Use of flow control statement in Stored Procedure Use of conditional statements in Stored Procedure.
+
+1)
+
+delimiter //
+
+create procedure print_numbers()
+begin
+declare i int default 1;
+while i<=10 do
+select i;
+set i=i+1;
+end while;
+end//
+
+delimiter ;
+
+mysql>call print_numbers();
+
++---+
+| i |
++---+
+| 1 |
+| 2 |
+| 3 |
+| 4 |
+| 5 |
+| 6 |
+| 7 |
+| 8 |
+| 9 |
+|10 |
++---+
+
+2)
+delimiter //
+
+create procedure check_salary(in eid int)
+begin
+declare sal int;
+select salary into sal from employee where empid=eid;
+
+if sal>=50000 then
+select 'high salary' as result;
+else
+select 'low salary' as result;
+end if;
+end//
+
+delimiter ;
+
+
+call check_salary(4);
+
++-------------+
+| result      |
++-------------+
+| high salary |
++-------------+
+
+call check_salary(1);
+
++------------+
+| result     |
++------------+
+| low salary |
++------------+
+
+3)
+delimiter //
+
+create procedure grade_salary(in eid int)
+begin
+declare sal int;
+select salary into sal from employee where empid=eid;
+
+if sal>=50000 then
+select 'grade a' as grade;
+elseif sal>=35000 then
+select 'grade b' as grade;
+else
+select 'grade c' as grade;
+end if;
+end//
+
+delimiter ;
+
+
+call grade_salary(6);
+
++---------+
+| grade   |
++---------+
+| grade a |
++---------+

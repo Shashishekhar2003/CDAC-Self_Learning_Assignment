@@ -1,0 +1,97 @@
+Q6. Writing procedures with Declare, fetch and close cursor Example of each type of cursors.
+
+1)
+delimiter //
+
+create procedure display_employees()
+begin
+declare done int default 0;
+declare v_name varchar(50);
+declare v_salary int;
+
+declare emp_cursor cursor for select empname,salary from employee;
+
+declare continue handler for not found set done=1;
+
+open emp_cursor;
+
+read_loop: loop
+
+fetch emp_cursor into v_name,v_salary;
+
+if done=1 then
+leave read_loop;
+end if;
+
+select v_name as employee_name,v_salary as salary;
+
+end loop;
+
+close emp_cursor;
+
+end//
+
+delimiter ;
+
+
+call display_employees();
+
++---------------+--------+
+| employee_name | salary |
++---------------+--------+
+| amit          | 35000  |
+| neha          | 45000  |
+| rahul         | 30000  |
+| pooja         | 55000  |
+| vikas         | 25000  |
+| anita         | 60000  |
+| rohan         | 40000  |
+| kiran         | 50000  |
+| meena         | 32000  |
+| ajay          | 28000  |
++---------------+--------+
+
+2)
+delimiter //
+
+create procedure total_salary()
+begin
+declare done int default 0;
+declare sal int;
+declare total int default 0;
+
+declare c1 cursor for select salary from employee;
+
+declare continue handler for not found set done=1;
+
+open c1;
+
+salary_loop: loop
+
+fetch c1 into sal;
+
+if done=1 then
+leave salary_loop;
+end if;
+
+set total=total+sal;
+
+end loop;
+
+close c1;
+
+select total as total_salary;
+
+end//
+
+delimiter ;
+
+
+
+call total_salary();
+
++--------------+
+| total_salary |
++--------------+
+| 400000       |
++--------------+
