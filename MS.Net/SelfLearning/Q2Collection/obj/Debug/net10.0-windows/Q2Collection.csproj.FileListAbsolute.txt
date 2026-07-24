@@ -1,0 +1,14 @@
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\bin\Debug\net10.0-windows\Q2Collection.exe
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\bin\Debug\net10.0-windows\Q2Collection.deps.json
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\bin\Debug\net10.0-windows\Q2Collection.runtimeconfig.json
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\bin\Debug\net10.0-windows\Q2Collection.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\bin\Debug\net10.0-windows\Q2Collection.pdb
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\obj\Debug\net10.0-windows\Q2Collection.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\obj\Debug\net10.0-windows\Q2Collection.AssemblyInfoInputs.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\obj\Debug\net10.0-windows\Q2Collection.AssemblyInfo.cs
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\obj\Debug\net10.0-windows\Q2Collection.csproj.CoreCompileInputs.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\obj\Debug\net10.0-windows\Q2Collection.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\obj\Debug\net10.0-windows\refint\Q2Collection.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\obj\Debug\net10.0-windows\Q2Collection.pdb
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\obj\Debug\net10.0-windows\Q2Collection.genruntimeconfig.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q2Collection\obj\Debug\net10.0-windows\ref\Q2Collection.dll

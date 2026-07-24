@@ -1,0 +1,9 @@
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q1Inheritance\bin\Debug\Q1Inheritance.exe.config
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q1Inheritance\bin\Debug\Q1Inheritance.exe
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q1Inheritance\bin\Debug\Q1Inheritance.pdb
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q1Inheritance\obj\Debug\Q1Inheritance.csproj.AssemblyReference.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q1Inheritance\obj\Debug\Q1Inheritance.Properties.Resources.resources
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q1Inheritance\obj\Debug\Q1Inheritance.csproj.GenerateResource.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q1Inheritance\obj\Debug\Q1Inheritance.csproj.CoreCompileInputs.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q1Inheritance\obj\Debug\Q1Inheritance.exe
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q1Inheritance\obj\Debug\Q1Inheritance.pdb
