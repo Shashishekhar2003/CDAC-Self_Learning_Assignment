@@ -1,0 +1,16 @@
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\bin\Debug\net10.0-windows\Q3ExceptionEvents.exe
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\bin\Debug\net10.0-windows\Q3ExceptionEvents.deps.json
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\bin\Debug\net10.0-windows\Q3ExceptionEvents.runtimeconfig.json
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\bin\Debug\net10.0-windows\Q3ExceptionEvents.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\bin\Debug\net10.0-windows\Q3ExceptionEvents.pdb
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\obj\Debug\net10.0-windows\Q3ExceptionEvents.Form1.resources
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\obj\Debug\net10.0-windows\Q3ExceptionEvents.csproj.GenerateResource.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\obj\Debug\net10.0-windows\Q3ExceptionEvents.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\obj\Debug\net10.0-windows\Q3ExceptionEvents.AssemblyInfoInputs.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\obj\Debug\net10.0-windows\Q3ExceptionEvents.AssemblyInfo.cs
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\obj\Debug\net10.0-windows\Q3ExceptionEvents.csproj.CoreCompileInputs.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\obj\Debug\net10.0-windows\Q3ExceptionEvents.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\obj\Debug\net10.0-windows\refint\Q3ExceptionEvents.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\obj\Debug\net10.0-windows\Q3ExceptionEvents.pdb
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\obj\Debug\net10.0-windows\Q3ExceptionEvents.genruntimeconfig.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q3ExceptionEvents\obj\Debug\net10.0-windows\ref\Q3ExceptionEvents.dll

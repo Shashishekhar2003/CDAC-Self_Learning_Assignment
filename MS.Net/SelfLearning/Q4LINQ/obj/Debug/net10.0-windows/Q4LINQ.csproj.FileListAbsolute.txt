@@ -1,0 +1,16 @@
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\bin\Debug\net10.0-windows\Q4LINQ.exe
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\bin\Debug\net10.0-windows\Q4LINQ.deps.json
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\bin\Debug\net10.0-windows\Q4LINQ.runtimeconfig.json
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\bin\Debug\net10.0-windows\Q4LINQ.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\bin\Debug\net10.0-windows\Q4LINQ.pdb
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\obj\Debug\net10.0-windows\Q4LINQ.Form1.resources
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\obj\Debug\net10.0-windows\Q4LINQ.csproj.GenerateResource.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\obj\Debug\net10.0-windows\Q4LINQ.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\obj\Debug\net10.0-windows\Q4LINQ.AssemblyInfoInputs.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\obj\Debug\net10.0-windows\Q4LINQ.AssemblyInfo.cs
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\obj\Debug\net10.0-windows\Q4LINQ.csproj.CoreCompileInputs.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\obj\Debug\net10.0-windows\Q4LINQ.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\obj\Debug\net10.0-windows\refint\Q4LINQ.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\obj\Debug\net10.0-windows\Q4LINQ.pdb
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\obj\Debug\net10.0-windows\Q4LINQ.genruntimeconfig.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q4LINQ\obj\Debug\net10.0-windows\ref\Q4LINQ.dll
