@@ -1,0 +1,16 @@
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\bin\Debug\net10.0-windows\Q5_101LINQ.exe
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\bin\Debug\net10.0-windows\Q5_101LINQ.deps.json
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\bin\Debug\net10.0-windows\Q5_101LINQ.runtimeconfig.json
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\bin\Debug\net10.0-windows\Q5_101LINQ.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\bin\Debug\net10.0-windows\Q5_101LINQ.pdb
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\obj\Debug\net10.0-windows\Q5_101LINQ.Form1.resources
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\obj\Debug\net10.0-windows\Q5_101LINQ.csproj.GenerateResource.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\obj\Debug\net10.0-windows\Q5_101LINQ.GeneratedMSBuildEditorConfig.editorconfig
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\obj\Debug\net10.0-windows\Q5_101LINQ.AssemblyInfoInputs.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\obj\Debug\net10.0-windows\Q5_101LINQ.AssemblyInfo.cs
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\obj\Debug\net10.0-windows\Q5_101LINQ.csproj.CoreCompileInputs.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\obj\Debug\net10.0-windows\Q5_101LINQ.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\obj\Debug\net10.0-windows\refint\Q5_101LINQ.dll
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\obj\Debug\net10.0-windows\Q5_101LINQ.pdb
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\obj\Debug\net10.0-windows\Q5_101LINQ.genruntimeconfig.cache
+E:\C-DAC\PGCP-AC\MS.NET\CSharpDemos26\Q5_101LINQ\obj\Debug\net10.0-windows\ref\Q5_101LINQ.dll
